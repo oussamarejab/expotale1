@@ -29,7 +29,7 @@ h3 a {
 }
 
 a {
-    color: rgb(16, 144, 190);
+    color: #1090be;
 }
 
 h1 {
@@ -175,9 +175,30 @@ nav ul ul ul li {
 
 /* Change ' +' in order to change the Dropdown symbol */
 
-li>a:after {
-    content: ' +';
+.Coming-Events .row .col:hover,
+.Previous-Events .row .col:hover {
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+    color: #6e158f;
 }
+
+.Coming-Events .row .col,
+.Previous-Events .row .col {
+    transition: all 1s ease;
+}
+
+.Previous-Events {
+    background-color: #6f158f3a;
+}
+
+.Coming-Events {
+    background-color: #63d2e848;
+}
+
+
+/* li>a:after {
+    content: ' +';
+} */
 
 li>a:only-child:after {
     content: '';
@@ -407,10 +428,10 @@ h6 {
 }
 
 .tagline {
-    width: 245px;
+    width: 174px;
     position: absolute;
-    top: 24px;
-    left: 260px;
+    top: 34px;
+    left: 272px;
 }
 
 .tagline img {
@@ -449,7 +470,7 @@ h6 {
 --------------------------------------------------------------*/
 
 .collapseouss {
-    background-color: #7308ff3f;
+    background-color: #63d2e848;
 }
 
 
@@ -1152,14 +1173,22 @@ section {
 --------------------------------------------------------------*/
 
 #team {
-    background-color: #63d2e848;
+    background-color: #ebe8ee3f;
+}
+
+#team .row {
+    justify-content: center;
+}
+
+#team .row div {
+    justify-content: center;
 }
 
 .team .member {
     margin-bottom: 20px;
     overflow: hidden;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 60px;
     background: #fff;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
@@ -1863,8 +1892,19 @@ section {
 
 /* =================video======= */
 
+.videomotion {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.secvideomotion {
+    background-color: rgba(137, 43, 226, 0.323);
+}
+
 .videomotion video {
     width: 100%;
+    align-items: center;
+    margin-top: 30px;
 }
 
 
