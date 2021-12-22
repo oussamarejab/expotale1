@@ -64,7 +64,7 @@ nav {
 }
 
 .navactive {
-    background-color: #7308ffa2;
+    background-color: #8A1A9B;
 }
 
 #logo {
@@ -104,7 +104,7 @@ nav ul li {
     margin: 0px;
     display: inline-block;
     float: left;
-    background-color: #7308ffa2;
+    background-color: #00BED6;
 }
 
 
@@ -126,8 +126,8 @@ nav ul li ul li:hover {
 /* Background color change on Hover */
 
 nav a:hover {
-    background-color: #899484;
-    color: #6e158f;
+    background-color: #6e158f;
+    color: white;
 }
 
 
@@ -430,7 +430,7 @@ h6 {
 .tagline {
     width: 174px;
     position: absolute;
-    top: 34px;
+    top: 55px;
     left: 272px;
 }
 
@@ -470,11 +470,18 @@ h6 {
 --------------------------------------------------------------*/
 
 .collapseouss {
-    background-color: #63d2e848;
+    height: auto;
+    width: 100%;
+    background-color: #837272;
+    background-image: radial-gradient(circle, #e3dede, #898978);
 }
 
 
 /* download file expotale */
+
+#cta {
+    background-color: #343a4060;
+}
 
 .ctaoussama {
     font-family: 'Cairo', sans-serif;
@@ -1074,6 +1081,11 @@ section {
 # Clients
 --------------------------------------------------------------*/
 
+#clients {
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
 .clients .clients-wrap {
     border-top: 1px solid #f1eeed;
     border-left: 1px solid #f1eeed;
@@ -1173,7 +1185,10 @@ section {
 --------------------------------------------------------------*/
 
 #team {
-    background-color: #ebe8ee3f;
+    height: auto;
+    width: 100%;
+    background-color: #837272;
+    background-image: radial-gradient(circle, #e3dede, #898978);
 }
 
 #team .row {
@@ -1191,6 +1206,17 @@ section {
     border-radius: 60px;
     background: #fff;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team .member h4 {
+    transition: all ease 1s;
+}
+
+.team .member h4:hover {
+    font-weight: bold !important;
+    cursor: pointer;
+    color: #7508FF !important;
+    transform: scale(1.1, 1.1) !important;
 }
 
 .team .member .member-img {
@@ -1898,7 +1924,11 @@ section {
 }
 
 .secvideomotion {
-    background-color: rgba(137, 43, 226, 0.323);
+    /* background-color: rgba(137, 43, 226, 0.323); */
+    background-image: url(../img/expotale/4.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .videomotion video {
@@ -1988,7 +2018,7 @@ section {
 /* /media querie */
 
 .maps-reviews {
-    background-color: #892be248;
+    background-color: #00bdd621;
 }
 
 .values {
@@ -2041,6 +2071,14 @@ section {
     margin-top: 10px;
 }
 
+.panel-title a:active {
+    color: black;
+}
+
+.panel-title a:hover {
+    color: black;
+}
+
 
 /* HOver affect on sticky social media icons */
 
@@ -2064,8 +2102,8 @@ section {
 }
 
 .panel-default>.panel-heading {
-    color: #fffdfd;
-    background-color: #a42ed5;
+    color: #00BED6;
+    background-color: #8A1A9B;
     border-color: #ddd;
 }
 
@@ -2098,4 +2136,172 @@ section {
 .slider .slide {
     height: 100px;
     width: 250px;
+}
+
+
+/* login popup */
+
+
+/* login */
+
+input[type=text],
+input[type=password] {
+    /* width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box; */
+}
+
+
+/* Set a style for all buttons */
+
+button {
+    background-color: #540c8f8e;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+/* Extra styles for the cancel button */
+
+.cancelbtn {
+    padding: 10px 18px;
+    background-color: #2acbe8;
+}
+
+
+/* Center the image and position the close button */
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 20%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button (x) */
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+
+/* Add Zoom Animation */
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+
+/* Change styles for span and cancel button on extra small screens */
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #topbar .logo img {
+        width: 52px;
+        border-radius: 7px;
+        margin: 39px -1px;
+        position: absolute;
+        margin-left: -46px;
+    }
 }
