@@ -23,7 +23,7 @@
 
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Muli:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -42,7 +42,11 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
-
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+    </style>
 
 </head>
 
@@ -120,9 +124,9 @@
                 <a href="previous-events.html" class="navactive">Events <i class="fas fa-caret-down"></i></a>
                 <input type="checkbox" id="drop-3" />
                 <ul>
-                    <li><a href="#Coming-Events">coming events</a></li>
+                    <li><a href="#Coming-Events">Coming Events</a></li>
 
-                    <li><a href="#Previous-Events">previous events</a></li>
+                    <li><a href="#Previous-Events">Previous Events</a></li>
                 </ul>
 
             </li>
@@ -133,9 +137,9 @@
                 <a href="galery.html">Media <i class="fas fa-caret-down"></i></a>
                 <input type="checkbox" id="drop-4" />
                 <ul>
-                    <li><a href="galery.html">photo </a></li>
-                    <li><a href="galery.html#video"> video</a></li>
-                    <li><a href="galery.html#press">press release </a></li>
+                    <li><a href="galery.html">Photo </a></li>
+                    <li><a href="galery.html#video"> Video</a></li>
+                    <li><a href="galery.html#press">Press Release </a></li>
                 </ul>
             </li>
             <li><a href="careers.html">Careers</a></li>
@@ -565,7 +569,6 @@
             .animated.flash {
                 animation-name: flash;
             }
-            /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
             
             @keyframes pulse {
                 from {

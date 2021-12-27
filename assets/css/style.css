@@ -192,7 +192,7 @@ nav ul ul ul li {
 }
 
 .Coming-Events {
-    background-color: #63d2e848;
+    background-image: url(../img/expotale/background.jpg);
 }
 
 
@@ -1937,11 +1937,9 @@ section {
 }
 
 .secvideomotion {
-    /* background-color: rgba(137, 43, 226, 0.323); */
-    background-image: url(../img/expotale/4.jpg);
+    background-image: url(../img/expotale/background.jpg);
     background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 
 .videomotion video {
@@ -2362,4 +2360,8 @@ span.psw {
 
 .flip-card-back h3 {
     margin: 30px;
+}
+
+.container {
+    font-family: 'Cairo', sans-serif !important;
 }
