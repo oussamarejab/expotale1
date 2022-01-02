@@ -248,3 +248,13 @@ window._mfq = window._mfq || [];
 
 
 //<!-- /////////track visitor heated map -->
+
+
+
+// dark mode
+
+// function darkModeouss() {
+//     var element = document.body;
+//     element.classList.toggle("dark-mode");
+// }
+//////////// dark mode

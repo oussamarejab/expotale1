@@ -378,6 +378,16 @@
         transform: scale(2, 2);
     }
     
+    #darkmode {
+        color: black !important;
+        line-height: 0 !important;
+        transition: 0.3s !important;
+        background-color: transparent;
+        margin: 0% !important;
+        padding: 0% !important;
+        margin-left: 15px !important;
+    }
+    
     #topbar .logo {
         width: 50px;
         border-radius: 20px;
@@ -1867,6 +1877,10 @@
         background-repeat: repeat;
     }
     
+    .videomotion {
+        width: 70%;
+    }
+    
     .videomotion video {
         width: 100%;
         align-items: center;
@@ -2254,3 +2268,8 @@
     .container {
         font-family: 'Cairo', sans-serif !important;
     }
+    /*     
+    .dark-mode {
+        background-color: black !important;
+        color: white !important;
+    } */
