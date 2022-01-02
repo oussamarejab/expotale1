@@ -611,6 +611,15 @@
         #hero .carousel-content p {
             font-size: 15px;
         }
+        .carousel-indicators {
+            display: none;
+        }
+        .carousel-control-next-icon,
+        carousel-control-prev,
+        .carousel-control-next,
+        .carousel-control-prev-icon {
+            display: none !important;
+        }
     }
     
     @media (max-height: 500px) {

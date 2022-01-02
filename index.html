@@ -240,10 +240,51 @@ Truss system,Doha, Qatar,Creative ideas ,Media production, Exhibition ,Conferenc
                 <div class="row">
                     <div class="col-lg-9 text-center text-lg-left">
                         <h2>CEO MESSAGE</h2><br>
-                        <p style="color: black; text-align: left;"> " Thank you for visiting our official website. For over 20 years I had been involved in planning, organizing, and managing different types and scales of <b>events</b> . What started as a temporary job, became my career and passion.
+                        <p style="color: black; text-align: left;"> " Thank you for visiting our official website. For over 20 years I had been involved in planning, organizing, and managing different types and scales of
+                            <b>events</b> . <span id="dots">...</span>
+                            <span id="more"> What started as a temporary job, became my career and passion.
                             <br> Expo Tale today is one of the <b> best event management companies in Qatar</b> serving the local and regional market. <br> Our team achieves this by embedding awe inspiring features in all our creations, even in the highest
                             pressure and time sensitive situations and that’s why, we highly believe and in invest in our team. Our mentality has built a strong relationship with our partners and clients For us every event is “<b> The EVENT</b>” and we
-                            always have a " <b>tale to tell</b> ". </p>
+                            always have a " <b>tale to tell</b> ".</span>
+                        </p>
+
+                        <button onclick="readMoreFN()" id="myBtnn">Read more ...</button>
+
+                        <style>
+                            #more {
+                                display: none;
+                            }
+                            
+                            #myBtnn {
+                                background-color: gray;
+                                color: black;
+                                padding: 5px;
+                                width: auto;
+                                border-radius: 4px;
+                            }
+                            
+                            #myBtnn:hover {
+                                background-color: rgb(166, 39, 197);
+                            }
+                        </style>
+                        <script>
+                            function readMoreFN() {
+                                var dots = document.getElementById("dots");
+                                var moreText = document.getElementById("more");
+                                var btnText = document.getElementById("myBtnn");
+
+                                if (dots.style.display === "none") {
+                                    dots.style.display = "inline";
+                                    btnText.innerHTML = "Read more";
+                                    moreText.style.display = "none";
+                                } else {
+                                    dots.style.display = "none";
+                                    btnText.innerHTML = "Read less";
+                                    moreText.style.display = "inline";
+                                }
+                            }
+                        </script>
+
                     </div>
                     <div class="col-lg-3 cta-btn-container text-center">
                         <a class="cta-btn align-middle" href="assets/img/expotale/test.png" download="test.png" target="_blank">Download our profile</a>
@@ -259,7 +300,7 @@ Truss system,Doha, Qatar,Creative ideas ,Media production, Exhibition ,Conferenc
         <section class="secvideomotion">
 
             <div class="videomotion">
-                <video src="assets/video/motion video.mp4" controls></video>
+                <video src="assets/video/motion video.mp4" controls autoplay></video>
             </div>
 
             <!-- download profile -->
