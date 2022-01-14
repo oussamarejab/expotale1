@@ -2302,4 +2302,7 @@
                 margin-left: 16px;
                 display: inline !important;
             }
+            #topbar .logo {
+                width: 57px;
+            }
         }
