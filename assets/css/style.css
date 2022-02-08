@@ -1600,7 +1600,8 @@
         padding: 10px 12px;
     }
     
-    .contact .php-email-form button[type=submit] {
+    .contact .php-email-form button,
+    input[type=submit] {
         background: #40CAE6;
         border: 0;
         padding: 10px 24px;
@@ -1818,7 +1819,8 @@
     
     @media only screen and (min-width: 0px) and (max-width:1024px) {
         #hero .carousel-content {
-            display: none;
+            position: absolute;
+            top: 338px;
         }
     }
     
@@ -2279,12 +2281,26 @@
     
     @media screen and (min-width: 1200px) {
         .divweddinglogo {
-            top: 15px;
+            top: 27px;
+        }
+    }
+    
+    @media screen and (min-width: 700px) and (max-width: 1200px) {
+        .divweddinglogo {
+            top: 42px;
         }
     }
     
     @media screen and (min-width: 340px) and (max-width: 700px) {
         .divweddinglogo {
-            top: 36px;
+            top: 42px;
+        }
+    }
+    
+    @media screen and (min-width: 340px) and (max-width: 900px) {
+        #hero .carousel-content {
+            background: rgba(28, 23, 21, 0.7);
+            padding: 20px;
+            width: 50%;
         }
     }
